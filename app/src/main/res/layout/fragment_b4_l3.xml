@@ -3,12 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".level3.fragment.B4L3Fragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    tools:context=".level3.fragment.B4L3Fragment"
+    android:id="@+id/parentLayout"
+    android:fitsSystemWindows="true">
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_baseline_arrow_downward_24"
+        android:layout_margin="16dp"
+        />
 
 </FrameLayout>
