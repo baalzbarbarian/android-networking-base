@@ -10,12 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.practice.androidnetworking_lv0.R;
-import com.practice.androidnetworking_lv0.level1.fragment.B4Fragment;
 
 
 public class MainFragment extends Fragment {
 
-    Button btn1, btn2, btn3, btn4;
+    private Button btn1, btn2, btn3, btn4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

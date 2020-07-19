@@ -1,4 +1,4 @@
-package com.practice.androidnetworking_lv0.level1.fragment;
+package com.practice.androidnetworking_lv0.level3.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,15 +18,13 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_main3, container, false);
         btn1 = view.findViewById(R.id.btn1);
         btn2 = view.findViewById(R.id.btn2);
         btn3 = view.findViewById(R.id.btn3);
         btn4 = view.findViewById(R.id.btn4);
 
         moveFunc();
-
         return view;
     }
 
@@ -34,36 +32,35 @@ public class MainFragment extends Fragment {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new B1Fragment());
+                loadFragment(new B1L3Fragment());
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new B2Fragment());
+                loadFragment(new B2L3Fragment());
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new B3Fragment());
+                loadFragment(new B3L3Fragment());
             }
         });
 
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new B4Fragment());
+                loadFragment(new B4L3Fragment());
             }
         });
     }
 
     private void loadFragment(Fragment fragment){
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame1, fragment);
+        transaction.replace(R.id.frame3, fragment);
         transaction.commit();
     }
-
 }

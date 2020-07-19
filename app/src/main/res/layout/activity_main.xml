@@ -54,4 +54,12 @@
         android:text="@string/lab2"
         app:layout_constraintTop_toBottomOf="@id/btnLab1"/>
 
+    <Button
+        android:id="@+id/btnLab3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/lab3"
+        app:layout_constraintTop_toBottomOf="@id/btnLab2"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,10 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.practice.androidnetworking_lv0.level1.Lv1Activity;
 import com.practice.androidnetworking_lv0.level2.Lv2Activity;
+import com.practice.androidnetworking_lv0.level3.Lv3Activity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLab1, btnLab2;
+    private Button btnLab1, btnLab2, btnLab3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private void initView(){
         btnLab1 = findViewById(R.id.btnLab1);
         btnLab2 = findViewById(R.id.btnLab2);
-
+        btnLab3 = findViewById(R.id.btnLab3);
     }
 
     private void moveFunc(){
@@ -43,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(lv2);
+            }
+        });
+
+        final Intent lv3 = new Intent(this, Lv3Activity.class);
+        btnLab3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(lv3);
             }
         });
     }
