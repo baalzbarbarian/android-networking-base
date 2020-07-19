@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dev_name"
+        app:layout_constraintTop_toBottomOf="@id/txt0" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnLab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/lab1"
+        app:layout_constraintTop_toBottomOf="@id/txt2"/>
+
+    <Button
+        android:id="@+id/btnLab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/lab2"
+        app:layout_constraintTop_toBottomOf="@id/btnLab1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
